@@ -1,0 +1,10 @@
+<!-- Prompt the user for a number n and display the first n numbers in the Fibonacci sequence. -->
+
+<script>
+    let num = parseInt(prompt("Enter one number"));
+    let arr = [0, 1];
+    for (let i = 2; i < num; i++) {
+        arr.push(arr[i-2] + arr[i-1]);
+        console.log(arr);
+    }
+</script>

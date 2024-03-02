@@ -1,0 +1,21 @@
+<!-- Program-2: Prompt one number from user and see the out put is Prime number or not -->
+
+<script>
+    function Prime() {
+        let num = parseInt(prompt("Enter a number"));
+        if (num < 2 || num % 2 === 0) {
+            alert("Entered number is not a Prime number");
+            return;
+        } else {
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) {
+                    console.log(i);
+                    alert("Entered number is not a Prime number");
+                    return;
+                }
+            }
+            alert(`${num} is a Prime number`);
+        }
+    }
+    Prime();
+</script>
