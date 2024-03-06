@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div class="calc-container">
+        <h2 class="title pink-text">Interest Calculator</h2>
+        <form>
+            <label>Principal Amount</label><br />
+            <input id="pAmt" class="input-box" type="text" /> <span class="pink-text">&#8377</span><br />
+            <label>Time</label><br />
+            <input id="time" class="input-box" type="text" /> <span class="pink-text">year(s)</span><br />
+            <label>Rate of Interest</label><br />
+            <input id="roi" class="input-box" type="text" /> <span class="pink-text">%</span>
+        </form>
+        <button onclick="calculateInterest()" type="submit" class="submit-btn">Get Amount</button>
+        <p id="sInt" class="res"></p> <br />
+        <p id="tAmt" class="res"></p>
+    </div>
+</body>
+
+</html>
